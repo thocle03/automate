@@ -1,3 +1,23 @@
+#Ce projet vise à automatiser le traitement des emails entrants grâce à BERT. Nous mettons en place un workflow intelligent où les emails sont :
+# 1) Classifiés selon leur catégorie 
+# 2) Analysés pour en extraire les mots-clés 
+# 3) Regroupés par sujets principaux 
+# 4) Visualisés sous forme de flux
+
+
+# Technologies utilisées
+# Python pour le développement Hugging Face Transformers pour l'IA Pandas pour la gestion des données NetworkX & Matplotlib pour la visualisation
+# Code qui marche sur collab directement sans rien a importer
+
+# Le processus suit 4 étapes principales : 
+# 1) Un email est reçu 
+# 2) Il est classé avec un modèle BERT pré-entraîné 
+# 3) Ses mots-clés sont extraits avec un modèle de reconnaissance d’entités nommées 
+# 4) Un modèle de classification détermine le sujet principal
+
+#Enfin, les résultats sont enregistrés dans un fichier CSV.
+
+
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
