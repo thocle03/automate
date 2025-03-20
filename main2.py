@@ -47,4 +47,4 @@ plt.show()
 df = pd.DataFrame({"Email": emails, "Catégorie": classification_result, "Mots-clés": keywords, "Sujet": topic_results})
 df.to_csv("emails_classifiés.csv", index=False)
 
-print("Processus terminé ! Résultats enregistrés dans 'emails_classifiés.csv'")
+print("Processus terminé,  résultats dans 'emails_classifiés.csv'")
